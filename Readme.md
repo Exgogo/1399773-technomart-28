@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Равиль Шайхатаров](https://up.htmlacademy.ru/htmlcss/28/user/1399773).
-* Наставник: [Александр Панасюк].
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
