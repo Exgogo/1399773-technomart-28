@@ -1,0 +1,19 @@
+
+
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-grey-light: #C5C5C5;
+  --wight: #FFFFFF;
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --успех: #5FBB2D;
+  --предупреждение: #FFBF47;
+  --ошибка: #BA2732;
+  --светло-серый: linear-gradient(bottom, #FFFFFF 100%, #EAEAEA 100%);
+
+}
