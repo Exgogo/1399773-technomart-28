@@ -9,15 +9,15 @@
 <body>
   <header>
     <div class="header-buyers_menu">
-      <a class="logo" href="">
+      <a class="logo" href="#">
         <img src="img/logo-technomart.svg" alt="Техномарт">
       </a>
       <form class="search-stuff" action="" method="get">
-        <input type="search" name="search-stuff" id="search-stuff">
+        <input type="search" name="search-stuff" id="search-stuff" aria-label="Поиск">
       </form>
-      <a class="" href="">Закладки</a>
-      <a class="" href="">Корзина</a>
-      <a class="" href="">Оформить заказ</a>
+      <a href="#">Закладки</a>
+      <a href="#">Корзина</a>
+      <a href="#">Оформить заказ</a>
     </div>
     <div class="header-middle">
       <div class="header-middle-page-description">
@@ -27,29 +27,29 @@
       </div>
       <div class="header-middle-contacts">
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="header-middle-login">
-        <a href="">Войти</a>
-        <a href="">Регистрация</a>
+        <a href="#">Войти</a>
+        <a href="#">Регистрация</a>
         <!-- Мнемонику сюда?
-        <a href="">Равшан Джамшутович</a>
+        <a href="#">Равшан Джамшутович</a>
         <p>
-          <a href="">Мои заказы</a>
+          <a href="#">Мои заказы</a>
           &bull;
-          <a href="">Личный кабинет</a>
+          <a href="#">Личный кабинет</a>
         </p> -->
       </div>
     </div>
     <nav class="header-menu">
       <ul>
-        <li>Главная</li>
-        <li>Компания</li>
-        <li>Каталог</li>
-        <li>Новости</li>
-        <li>Спецпредложения</li>
-        <li>Доставка</li>
-        <li>Контакты</li>
+        <li><a href="blank.html">Главная</a></li>
+        <li><a href="blank.html">Компания</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="blank.html">Новости</a></li>
+        <li><a href="blank.html">Спецпредложения</a></li>
+        <li><a href="blank.html">Доставка</a></li>
+        <li><a href="blank.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -60,15 +60,15 @@
       <!-- Подозреваю что все что ниже это section с заголовками -->
       <div class="content-materials">
         <p>Материалы</p>
-        <a href="">На любой вкус</a>
+        <a href="#">На любой вкус</a>
       </div>
       <div class="content-tools">
         <p>Инструмент</p>
-        <a href="">На все случаи</a>
+        <a href="#">На все случаи</a>
       </div>
       <div class="content-technics">
         <p>Техника</p>
-        <a href="">Для стройки</a>
+        <a href="#">Для стройки</a>
       </div>
       <div class="content-perforators">
         <img src="img/promo-perforators.jpg" alt="Перфораторы">
@@ -81,23 +81,23 @@
         <img src="img/promo-drill.jpg" alt="Дрели">
         <p>Дрели</p>
         <p>Соседям на радость!</p>
-        <a href="">Открыть каталог</a>
+        <a href="#">Открыть каталог</a>
       </div> -->
       <div class="content-discounts">
         <p>Скидка 50%</p>
-        <a href="">На 350 товаров</a>
+        <a href="#">На 350 товаров</a>
       </div>
       <div class="content-delivery">
         <p>Доставка</p>
-        <a href="">Бесплатно</a>
+        <a href="#">Бесплатно</a>
       </div>
     </section>
 
-    <!-- Популярные товары -->
+    <!-- Popular products -->
     <section class="popular-products">
       <div class="title">
         <h1>Популярные товары:</h1>
-        <a href="">Все популярные товары</a>
+        <a href="#">Все популярные товары</a>
       </div>
       <ul>
       <li>
@@ -106,21 +106,18 @@
         <del>32500 Р.</del>
         <div class="price-tag">25500 Р.</div>
       </li>
-
       <li>
         <img src="img/bfg-2.jpg" width="127" height="112" alt="BOSCH BFG 3000">
         <h3>Перфоратор BOSCH BFG 3000</h3>
         <del>22500 Р.</del>
         <div class="price-tag">15500 Р.</div>
       </li>
-
       <li>
         <img src="img/bfg-1.jpg" width="144" height="128" alt="BOSCH BFG 6000">
         <h3>Перфоратор BOSCH BFG 6000</h3>
         <del>30500 Р.</del>
         <div class="price-tag">25500 Р.</div>
       </li>
-
       <li>
         <img src="img/bfg-2.jpg" width="127" height="112" alt="BOSCH BFG 2000">
         <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -132,52 +129,52 @@
     <section class="popular-manufacturers">
       <div class="title">
         <h1>Популярные производители:</h1>
-        <a href="">Открыть каталог</a>
+        <a href="#">Открыть каталог</a>
       </div>
       <ul>
         <li>
-          <a class="bosch">
+          <a class="bosch" href="#">
             <img src="img/bosch.jpg" width="126" height="37" alt="BOSCH">
           </a>
         </li>
         <li>    
-          <a class="makita">
+          <a class="makita" href="#">
             <img src="img/makita.png" width="123" height="40" alt="Makita">
           </a>
         </li>
         <li>
-          <a class="dewalt">
+          <a class="dewalt" href="#">
             <img src="img/dewalt.png" width="146" height="44" alt="DeWALT">
           </a>
         </li>  
         <li>  
-          <a class="interskol">
+          <a class="interskol" href="#">
             <img src="img/interskol.png" width="200" height="88" alt="Интерскол">
           </a>
         </li>  
         <li>
-          <a class="hitachi">
+          <a class="hitachi" href="#">
             <img src="img/hitachi.png" width="169" height="31" alt="HITACHI">
           </a>
         </li>  
         <li>
-          <a class="lg">
+          <a class="lg" href="#">
             <img src="img/lg.png" width="121" height="73" alt="LG">
           </a>
         </li>  
         <li>
-          <a class="aeg">
+          <a class="aeg" href="#">
             <img src="img/aeg.png" width="151" height="96" alt="AEG">
           </a>
         </li>  
         <li>
-          <a class="metabo">
+          <a class="metabo" href="#">
             <img src="img/metabo.png" width="204" height="69" alt="metabo">
           </a>
         </li>  
     </section>
 
-    <!-- Преимущества -->
+    <!-- Features -->
     <section class="features">
       <h1>Сервисы</h1>
       <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
@@ -190,10 +187,10 @@
         </ul>
         <!-- Подумать как замутить эту полосу сбоку списка -->
         <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо </p>
-        <p>к вашему подъезду совершенно бесплатно!</p>
-        <p>Ведь мы неплохо заработаем,</p>
-        <p>поднимая его на ваш этаж!</p>
+        <p>Мы с удовольствием доставим ваш товар прямо 
+        к вашему подъезду совершенно бесплатно
+        Ведь мы неплохо заработаем
+        поднимая его на ваш этаж!</p>
 
         <!-- *Options*
         <h2>Гарантия</h2>
@@ -206,11 +203,11 @@
         <h2>Кредит</h2>
         <p>Залезть в долговую яму стало проще! </p>
         <p>Кредитные консультанты придут вам на помощь.</p>
-        <a href="">Отправить заявку</a> -->
+        <a href="#">Отправить заявку</a> -->
       </div>
     </section>
 
-    <!-- Контакты -->
+    <!-- Contacts -->
     <div class="contacts">
       <section class="about-company">
         <h1>Компания «Техномарт»</h1>
@@ -226,48 +223,48 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="" href="">Подробнее о компании</a>
+        <a href="#">Подробнее о компании</a>
       </section>
       <section class="delivery-contacts">
         <h1>Контакты</h1>
         <p>Вы можете забрать товар сами,
           заехав в наш офис:</p>
         <img src="img/small-map.png" width="300" height="158" alt="Местоположение">
-        <a href="">Заблудились? Напишите нам!</a>
+        <a href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
 
   <footer>
     <div class="footer-top">
-      <a href="">
+      <a href="#">
         <img src="img/logo-footer.svg" alt="Техномарт">
       </a>
       <ul class="footer-top-menu">
-        <li>Компания</li>
-        <li>Новости</li>
-        <li>Каталог</li>
-        <li>Доставка</li>
-        <li>Контакты</li>
+        <li><a href="blank.html">Компания</a></li>
+        <li><a href="blank.html">Новости</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="blank.html">Доставка</a></li>
+        <li><a href="blank.html">Контакты</a></li>
       </ul>
     </div>
     <div class="footer-middle">
-      <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       <ul class="stuff">
-        <li>Материалы</li>
-        <li>Техника</li>
-        <li>Инструмент</li>
-        <li>Спецпредложения</li>
+        <li><a href="blank.html">Материалы</a></li>
+        <li><a href="blank.html">Техника</a></li>
+        <li><a href="blank.html">Инструмент</a></li>
+        <li><a href="blank.html">Спецпредложения</a></li>
       </ul>
     </div>
     <div class="footer-bottom">
       <p>© 2010–2019 Компания «Техномарт»
          Все права защищены</p>
       <ul class="socials">
-        <li><a href="" aria-label="Vkontakte"></a></li>
-        <li><a href="" aria-label="Facebook"></a></li>
-        <li><a href="" aria-label="Instagram"></a></li>
+        <li><a href="#"></a>Вконтакте</li>
+        <li><a href="#"></a>Фейсбук</li>
+        <li><a href="#"></a>Инстаграм</li>
       </ul>
       <p>Обратная связь:
         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> </p>
@@ -275,6 +272,24 @@
         <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
     </div>
   </footer>
+
+
+  <section class="popup-order">
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <button type="button" aria-label="Закрыть окно"></button>
+      <label>Ваше имя:<input type="text" name="" id="" placeholder="Имя Фамилия"></label>
+      <label>Ваш e-mail:<input type="email" name="" id="" placeholder="email@example.com"></label>
+      <label>Текст письма:<input type="text" name="" id="" placeholder="В свободной форме"></label>
+      <div class="popup-button">
+        <button type="submit">Оформить заказ</button>
+      </div>
+    </form>
+  </section>
+  <section class="popup-map">
+    <form action="" method="get">
+      <button type="button" aria-label="Закрыть окно"></button>
+    </form>
+  </section>
 </body>
 
 </html>
