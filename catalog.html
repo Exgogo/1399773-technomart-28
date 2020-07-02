@@ -18,7 +18,8 @@
           <img src="img/logo-technomart.svg" width="220" height="47" alt="ТЕХНОМАРТ">
           <img src="img/logo-active.svg" width="220" height="47" alt="ТЕХНОМАРТ">
         </a>
-        <form class="search-stuff" action="" method="get">
+        <form class="search-stuff" action="https://echo.htmlacademy.ru/courses" method="get">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           <input type="search" name="search-stuff" id="search-stuff" placeholder="Поиск:">
         </form>
         <a href="#">Закладки: 0</a>
@@ -38,11 +39,18 @@
       </div>
       <div class="header-middle-login">
         <div class="login-options-outside">
-          <a href="#">Войти</a>
+          <a class="login-button" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+            Войти
+          </a>
           <a href="#">Регистрация</a>
         </div>
-        <div class="login-interface">
-          <a href="#">Равшан Джамшутович</a>
+        <div class="login-interface">          
+          <a class="login-button" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+            Равшан Джамшутович
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 21 17"><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></svg>
+          </a>          
           <div class="login-options-inside">
             <a href="#">Мои заказы</a>
             &bull;
@@ -68,10 +76,10 @@
     <div class="catalog">
       <!-- Bread crumbs -->
       <ul class="bread-crumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="catalog.html">Инструмент</a></li>
-        <li><a href="catalog.html">Перфораторы</a></li>
+        <li class="crumb"><a href="index.html" aria-label="Главная"></a></li>
+        <li class="crumb"><a href="catalog.html">Каталог</a></li>
+        <li class="crumb"><a href="catalog.html">Инструмент</a></li>
+        <li class="crumb"><a href="catalog.html">Перфораторы</a></li>
       </ul>
       <div class="title">
         <h1>Перфораторы</h1>
@@ -82,25 +90,36 @@
         <div class="filter-title">
           <h2>Фильтр:</h2>
         </div>
-        <form action="https://echo.htmlacademy.ru/courses" method="GET" oninput="priceoutput.value=filterprice.value">
+        <form action="https://echo.htmlacademy.ru/courses" method="GET">
           <fieldset>
             <legend>Цена:</legend>
-            <label><input type="range" name="filterprice" id="filterprice" min="0" max="35000" step="1000" value="0"></label>
-            <output name="priceoutput">0</output>
-            <span>-</span>
+            <div class="price-range">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>      
+                </div>
+              </div>
+              <div class="price-controls">
+                <input class="min-price" type="number" name="min-price" value="0">
+                -
+                <input class="max-price" type="number" name="max-price" value="15000">
+              </div>
+            </div>
           </fieldset>  
           <fieldset>
             <legend>Производители:</legend>
-            <label><input type="checkbox" name="bosch" checked>Bosch</label>
-            <label><input type="checkbox" name="interskol">Интерскол</label>
-            <label><input type="checkbox" name="makita" checked>Makita</label>
-            <label><input type="checkbox" name="dewalt">Dewalt</label>
-            <label><input type="checkbox" name="hitachi">Hitachi</label>
+            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="bosch" checked><span></span>Bosch</label>
+            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="interskol"><span></span>Интерскол</label>
+            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="makita" checked><span></span>Makita</label>
+            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="dewalt"><span></span>Dewalt</label>
+            <label><input class="visually-hidden filter-checkbox" type="checkbox" name="hitachi"><span></span>Hitachi</label>
           </fieldset>  
           <fieldset>
             <legend>Питание:</legend>
-            <label><input type="radio" name="electricity" value="accumulator">Аккумуляторные</label>
-            <label><input type="radio" name="electricity" value="grid">Сетевые</label>
+            <label><input class="visually-hidden filter-radio" type="radio" name="electricity" value="accumulator" checked><span></span>Аккумуляторные</label>
+            <label><input class="visually-hidden filter-radio" type="radio" name="electricity" value="grid"><span></span>Сетевые</label>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -111,9 +130,11 @@
         <section class="sorting">
           <h2>Сортировка:</h2>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По функционалу</li>
+            <li class="sorting-item"><a href="#">По цене</a></li>
+            <li class="sorting-item"><a href="#">По типу</a></li>
+            <li class="sorting-item"><a href="#">По функционалу</a></li>
+            <li class="sorting-item"><a href="#"></a></li>
+            <li class="sorting-item"><a href="#"></a></li>
           </ul>  
           <!-- arrows-frames -->
         </section>
@@ -196,7 +217,7 @@
         </section>
 
         <ul class="pagination">
-          <li><a href="#">1</a></li>
+          <li class="pagination-current"><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a class="next-page" href="#">Следующая</a></li>
@@ -267,6 +288,8 @@
     </form>
     <button class="cross" type="button" aria-label="Закрыть окно"></button>
   </section>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
