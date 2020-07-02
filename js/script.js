@@ -1,8 +1,7 @@
 // Modal "popup order"
-var modal = document.querySelector('.modal');
 var popup_order = document.querySelector('.popup-order');
 var write_us = document.querySelector('.write-us');
-var cross_close = document.querySelector('.cross');
+var order_close = document.querySelector('.cross');
 var order_form = document.querySelector('.order-form');
 var order_name = document.querySelector('.order-name');
 var order_email = document.querySelector('.order-email');
@@ -22,20 +21,32 @@ order_form.addEventListener("submit", function (evt) {
   }
 });
 
-// Close function for all modals
-cross_close.addEventListener("click", function() {
-  modal.classList.remove('modal-show');
+order_close.addEventListener("click", function() {
+  popup_order.classList.remove('modal-show');
   popup_order.classList.remove('modal-error');
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (modal.classList.contains("modal-show")) {
-      modal.classList.remove("modal-show");
+    if (popup_order.classList.contains("modal-show")) {
+      popup_order.classList.remove("modal-show");
       popup_order.classList.remove('modal-error');
     }
   }
 });
 
 //Modal map
+var img_map = document.querySelector('.img-map');
+var popup_map = document.querySelector('.popup-map');
+var map_close = popup_map.querySelector('.cross');
 
+img_map.classList.add('pointer');
+
+img_map.addEventListener("click", function() {
+  popup_map.classList.add('modal-show');
+});
+
+map_close.addEventListener("click", function(evt) {
+  evt.preventDefault()
+  popup_map.classList.remove('modal-show');
+});
