@@ -35,7 +35,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-//Modal map
+// Modal map
 var img_map = document.querySelector('.img-map');
 var popup_map = document.querySelector('.popup-map');
 var map_close = popup_map.querySelector('.cross');
@@ -46,7 +46,24 @@ img_map.addEventListener("click", function() {
   popup_map.classList.add('modal-show');
 });
 
-map_close.addEventListener("click", function(evt) {
-  evt.preventDefault()
+map_close.addEventListener("click", function (evt) {
+  evt.preventDefault();
   popup_map.classList.remove('modal-show');
+});
+
+// Modal cart
+var popup_cart = document.querySelector('.popup-cart');
+var buy_button = document.querySelector('.asd');
+var cart_close = popup_cart.querySelector('.cross');
+
+buy_button.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup_cart.classList.add('modal-show');
+});
+
+console.log(buy_button)
+
+cart_close.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup_cart.classList.remove('modal-show');
 });

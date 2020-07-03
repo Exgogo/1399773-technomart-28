@@ -714,7 +714,8 @@ header a {
   display: block;
 }
 
-.perforators-card button:nth-of-type(2n-1) {
+.buy-button {
+  position: relative;
   margin-top: 38px;
   margin-bottom: 10px;
   padding-left: 13px;
@@ -725,11 +726,23 @@ header a {
   box-shadow: inset 0px -3px 0px #367315;
 }
 
-.perforators-card button:nth-of-type(2n-1):hover {
+.buy-button::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+
+  background: url(../img/icon-cart.svg) no-repeat;
+  opacity: 0.3;
+}
+
+.buy-button:hover {
   background: var(--успех);
 }
 
-.perforators-card button:nth-of-type(2n-1):active {
+.buy-button:active {
   background: #518534;
 }
 
