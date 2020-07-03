@@ -717,6 +717,7 @@ header a {
 .perforators-card button:nth-of-type(2n-1) {
   margin-top: 38px;
   margin-bottom: 10px;
+  padding-left: 13px;
   border: none;
 
   color: var(--wight);
@@ -1034,6 +1035,10 @@ header a {
   width: 180px;
   margin: 0;
   margin-bottom: 25px;
+}
+
+.pointer {
+cursor: pointer;
 }
 
 .delivery-contacts a {
