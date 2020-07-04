@@ -61,7 +61,7 @@ buy_button.addEventListener("click", function (evt) {
   popup_cart.classList.add('modal-show');
 });
 
-console.log(buy_button)
+console.log(document.querySelector('.popup-cart'));
 
 cart_close.addEventListener("click", function(evt) {
   evt.preventDefault();
