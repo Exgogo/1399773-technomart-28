@@ -1,19 +1,50 @@
 
 // Modal cart
-// let buy_button = document.querySelectorAll('.buy-button');
-// let popup_cart = document.querySelector('.popup-cart');
-// let cart_close = popup_cart.querySelector('.cross');
+let buy_button = document.querySelectorAll('.buy-button');
+let popup_cart = document.querySelector('.popup-cart');
+let cart_close = popup_cart.querySelector('.cross');
+let continue_shopping = popup_cart.querySelector('.continue-shopping');
 
-// buy_button.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   popup_cart.classList.add('modal-show');
-// });
+buy_button.forEach((i, index) => {
+  i.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    popup_cart.classList.add('modal-show');
+  })
+});
 
-// cart_close.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   popup_cart.classList.remove('modal-show');
-// });
+cart_close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup_cart.classList.remove('modal-show');
+});
 
+continue_shopping.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup_cart.classList.remove('modal-show');
+});
+
+// Slider
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+};
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+};
+
+function showSlides(n) {
+  let i;
+  let slides = document.querySelectorAll(".content-perforators");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+};
 
 // Services tabs
 let features_items = document.querySelectorAll('.features-item');
