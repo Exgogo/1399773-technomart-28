@@ -1,14 +1,25 @@
 
-// Modal cart
+// Modal cart and adds in cart
 let buy_button = document.querySelectorAll('.buy-button');
+let in_favorite = document.querySelectorAll('.in-favorite');
+let favorites = document.querySelector('.favorites');
+let cart = document.querySelector('.cart');
 let popup_cart = document.querySelector('.popup-cart');
 let cart_close = popup_cart.querySelector('.cross');
 let continue_shopping = popup_cart.querySelector('.continue-shopping');
 
-buy_button.forEach((i, index) => {
+buy_button.forEach((i) => {
   i.addEventListener('click', (evt) => {
     evt.preventDefault();
     popup_cart.classList.add('modal-show');
+    cart.classList.add('active');
+  })
+});
+
+in_favorite.forEach((i) => {
+  i.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    favorites.classList.add('active');
   })
 });
 

@@ -163,7 +163,6 @@ header a {
 .search-stuff {
   position: relative;
   display: flex;
-  margin-right: 43px;
 }
 
 .search-stuff:focus-within {
@@ -212,11 +211,16 @@ header a {
   color: var(--white-half-opacity);
 }
 
-.header-buyers-menu a:nth-last-child(3)::before {
+.header-buyers-menu .favorites {
+  width: 121px;
+  padding-left: 43px;
+}
+
+.header-buyers-menu .favorites::before {
   content: "";
   position: absolute;
   top: 13px;
-  left: -23px;
+  left: 23px;
   width: 14px;
   height: 16px;
 
@@ -233,20 +237,19 @@ header a {
 }
 
 .cart {
-  margin-left: auto;
-  padding-right: 27px;
+  width: 101px;
   padding-left: 35px;
 }
 
-.catalog-page .cart {
-  padding-right: 21px;
+.header-buyers-menu .active {
   background: var(--basic-red);
 }
-.catalog-page .cart:hover {
+
+.header-buyers-menu .active:hover {
   background: var(--light-red);
 }
-.catalog-page .cart:active {
-  background: var(--light-red);
+.header-buyers-menu .active:active {
+  background: var(--dark-red);
 }
 
 .cart::before {
@@ -263,12 +266,16 @@ header a {
 
 .header-buyers-menu a:last-child {
   padding-left: 19px;
-  padding-right: 17px;
+  padding-right: 16px;
   background: var(--basic-green);
 }
 
 .header-buyers-menu a:last-child:hover {
   background: var(--success);
+}
+
+.header-buyers-menu a:last-child:active {
+  background: var(--basic-green);
 }
 
 .header-middle {
@@ -348,11 +355,15 @@ header a {
   fill: var(--basic-grey-light);
 }
 
-.login-button:hover svg {
+.login-link:hover svg,
+.logout-link:hover svg,
+.login-options-outside:hover svg {
   fill: var(--basic-grey);
 }
 
-.login-button:active svg {
+.login-link:active svg,
+.logout-link:active svg,
+.login-options-outside:active svg {
   fill: var(--basic-grey-light);
 }
 
@@ -379,7 +390,7 @@ header a {
 }
 
 .login-options-outside a:active,
-.login-options-inside a:active {
+.login-interface a:active {
   color: var(--basic-grey-light);
 }
 
@@ -388,18 +399,24 @@ header a {
   left: 19px;
 }
 
+.login-interface a {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
 .login-interface .login-button {
   position: relative;
   margin-bottom: 7px;
   padding: 12px 57px 12px 57px;
 }
 
-.login-interface svg:first-of-type {
+.login-link svg {
   top: 13px;
   left: 15px;
 }
 
-.login-interface svg:last-of-type {
+.logout-link svg {
   top: 14px;
   right: 17px;
 }
@@ -1396,6 +1413,7 @@ cursor: pointer;
 
 /* Popup-map */
 .popup-map {
+  top: 30vh;
   width: 943px;
   height: 449px;
 }
@@ -1417,6 +1435,7 @@ cursor: pointer;
 
 /* Popup cart */
 .popup-cart {
+  top: 35vh;
   width: 620px;
 }
 
