@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           <input type="search" name="search-stuff" id="search-stuff" placeholder="Поиск:">
         </form>
-        <a href="#">Закладки: 0</a>
+        <a class="favorites" href="#">Закладки: 0</a>
         <a class="cart" href="#">Корзина: 0</a>
         <a href="#">Оформить заказ</a>
       </div>
@@ -128,7 +128,7 @@
         <li class="perforators-card">
           <img class="bfg-9" src="img/bfg-9000.jpg" width="184" height="164" alt="BOSCH BFG 3000">
           <button class="buy-button" type="button">Купить</button>
-          <button type="button">В закладки</button>
+          <button class="in-favorite" type="button">В закладки</button>
           <h3>Перфоратор BOSCH BFG 9000</h3>
           <del>32500 Р.</del>
           <div class="price-tag">25500 Р.</div>
@@ -136,7 +136,7 @@
         <li class="perforators-card new">
           <img class="bfg-32" src="img/bfg-2.jpg" width="127" height="112" alt="BOSCH BFG 3000">
           <button class="buy-button" type="button">Купить</button>
-          <button type="button">В закладки</button>
+          <button class="in-favorite" type="button">В закладки</button>
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <del>22500 Р.</del>
           <div class="price-tag">15500 Р.</div>
@@ -144,7 +144,7 @@
         <li class="perforators-card">
           <img class="bfg-6" src="img/bfg-1.jpg" width="144" height="128" alt="BOSCH BFG 6000">
           <button class="buy-button" type="button">Купить</button>
-          <button type="button">В закладки</button>
+          <button class="in-favorite" type="button">В закладки</button>
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <del>30500 Р.</del>
           <div class="price-tag">25500 Р.</div>
@@ -152,7 +152,7 @@
         <li class="perforators-card new">
           <img class="bfg-32" src="img/bfg-2.jpg" width="127" height="112" alt="BOSCH BFG 2000">
           <button class="buy-button" type="button">Купить</button>
-          <button type="button">В закладки</button>
+          <button class="in-favorite" type="button">В закладки</button>
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <div class="price-tag">12500 Р.</div>
         </li>
@@ -355,7 +355,7 @@
     <button class="cross" type="button" aria-label="Закрыть окно"></button>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
