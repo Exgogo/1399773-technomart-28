@@ -23,12 +23,12 @@ in_favorite.forEach((i) => {
   })
 });
 
-cart_close.addEventListener('click', function (evt) {
+cart_close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_cart.classList.remove('modal-show');
 });
 
-continue_shopping.addEventListener('click', function (evt) {
+continue_shopping.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_cart.classList.remove('modal-show');
 });
@@ -47,18 +47,14 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.querySelectorAll('.content-perforators');
-  let dots = document.querySelectorAll('.slide-points');
+  let slides = document.querySelectorAll(".content-perforators");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
+      slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" current-point", "");
-}
-  slides[slideIndex-1].style.display = 'block';  
-  dots[slideIndex-1].className += " current-point";
+
+  slides[slideIndex-1].style.display = "block";
 };
 
 // Services tabs
@@ -66,10 +62,10 @@ let features_items = document.querySelectorAll('.features-item');
 
 if (features_items) {
   for (let item of features_items) {
-    item.addEventListener('click', function(evt) {
+    item.addEventListener("click", function(evt) {
       evt.preventDefault();
 
-      let item_id = this.getAttribute('data-tab');
+      let item_id = this.getAttribute("data-tab");
       let tab_id = document.querySelector(`.features-tab[data-tab='${item_id}']`);
       let current_item = document.querySelector('.features-item.current');
       let current_tab = document.querySelector('.features-tab.current');
@@ -84,21 +80,23 @@ if (features_items) {
 };
 
 // Modal map
-let link_map = document.querySelector('.link-map');
+let img_map = document.querySelector('.img-map');
 let popup_map = document.querySelector('.popup-map');
 let map_close = popup_map.querySelector('.cross');
 
-link_map.addEventListener('click', function (evt) {
+img_map.classList.add('pointer');
+
+img_map.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_map.classList.add('modal-show');
 });
 
-map_close.addEventListener('click', function (evt) {
+map_close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_map.classList.remove('modal-show');
 });
 
-// Modal 'popup order'
+// Modal "popup order"
 let write_us = document.querySelector('.write-us');
 let popup_order = document.querySelector('.popup-order');
 let order_form = popup_order.querySelector('.order-form');
@@ -106,13 +104,13 @@ let order_name = popup_order.querySelector('.order-name');
 let order_email = popup_order.querySelector('.order-email');
 let order_close = popup_order.querySelector('.cross');
 
-write_us.addEventListener('click', function (evt) {
+write_us.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_order.classList.add('modal-show');
   order_name.focus();
 });
 
-order_form.addEventListener('submit', function (evt) {
+order_form.addEventListener("submit", function (evt) {
   if (!order_name.value || !order_email.value) {
     evt.preventDefault();
     popup_order.classList.remove('modal-error');
@@ -121,16 +119,16 @@ order_form.addEventListener('submit', function (evt) {
   }
 });
 
-order_close.addEventListener('click', function (evt) {
+order_close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup_order.classList.remove('modal-show');
   popup_order.classList.remove('modal-error');
 });
 
-window.addEventListener('keydown', function (evt) {
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (popup_order.classList.contains('modal-show')) {
-      popup_order.classList.remove('modal-show');
+    if (popup_order.classList.contains("modal-show")) {
+      popup_order.classList.remove("modal-show");
       popup_order.classList.remove('modal-error');
     }
   }

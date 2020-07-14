@@ -1,0 +1,53 @@
+/* cuprum-regular */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cuprum Regular'), local('Cuprum-Regular'),
+       url('../fonts/cuprum.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cuprum.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Cuprum-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* cuprum-italic */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cuprum Italic'), local('Cuprum-Italic'),
+       url('../fonts/cuprumitalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cuprumitalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Cuprum-Italic.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* cuprum-700 */
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cuprum Bold'), local('Cuprum-Bold'),
+       url('../fonts/cuprumbold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cuprumbold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Cuprum-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/* cuprum-regular */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/ptsans.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ptsans.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/PTS55F.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/PTS56F.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* cuprum-700 */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/ptsansbold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ptsansbold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/PTS75F.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/PTS7F.ttf') format('truetype'); /* Safari, Android, iOS */
+}
