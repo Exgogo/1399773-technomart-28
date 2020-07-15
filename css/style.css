@@ -385,14 +385,12 @@ img {
 
 .login-options-outside a {
   margin-bottom: 5px;
-}
-
-.login-options-outside a:first-of-type {
-  padding: 12px 27px 12px 46px;
-}
-
-.login-options-outside a:last-of-type {
   padding: 12px 24px;
+}
+
+.login-options-outside .login {
+  padding-right: 27px;
+  padding-left: 46px;
 }
 
 .login-options-outside a:hover,
@@ -428,14 +426,17 @@ img {
 }
 
 .logout-page {
+  position: absolute;
   display: block;
-  width: 1px;
-  height: 1px;
+  top: 14px;
+  right: 17px;
+  width: 20px;
+  height: 17px;
 }
 
 .logout-page svg {
-  top: 14px;
-  right: 17px;
+  top: 0;
+  right: 0;
 }
 
 .login-options-inside {
@@ -766,7 +767,7 @@ img {
 }
 
 .perforators-card:hover img,
-.perforators-card:focus img {
+.perforators-card:focus-within img {
   display: none;
 }
 
@@ -788,7 +789,7 @@ img {
 }
 
 .perforators-card:hover a,
-.perforators-card:focus a {
+.perforators-card:focus-within a {
   display: block;
 }
 

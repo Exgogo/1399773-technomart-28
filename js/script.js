@@ -33,6 +33,14 @@ continue_shopping.addEventListener('click', function (evt) {
   popup_cart.classList.remove('modal-show');
 });
 
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup_cart.classList.contains('modal-show')) {
+      popup_cart.classList.remove('modal-show');
+    }
+  }
+});
+
 // Slider
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -96,6 +104,14 @@ link_map.addEventListener('click', function (evt) {
 map_close.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup_map.classList.remove('modal-show');
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup_map.classList.contains('modal-show')) {
+      popup_map.classList.remove('modal-show');
+    }
+  }
 });
 
 // Modal 'popup order'
